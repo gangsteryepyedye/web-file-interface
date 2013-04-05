@@ -1,0 +1,13 @@
+<h1>Application</h1>
+
+<p>Your content here.</p>
+
+{{outlet}}
+{{view Ember.TextField valueBinding="newFilePath" action="addPath"}}
+{{newFilePath}}
+
+<ul>
+   {{#each entries}}
+   <li>{{name}}</li>
+   {{/each}}
+</ul>
